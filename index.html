@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientação a Objetos</title>
+</head>
+<body>
+    <header>
+        <h1>Orientação a Objetos</h1>
+    </header>
+    <!-- Java Script -->
+    <script>
+        class Carros {
+    constructor(marca , modelo , ano){
+        this.marca = marca ;
+        this.modelo = modelo;
+        this.ano = ano ;
+        this.ligado = false ;
+    }
+    ligar(){
+        this.ligado = true ;
+        alert('Seu Carro está ligado');
+    }
+
+    desligado(){
+        this.ligado = false ;
+        alert('Seu Carro Está desligado');
+    }
+
+    imprimirInfo(){
+        alert(`Marca: ${this.marca}`);
+        alert(`Modelo: ${this.modelo}`);
+        alert(`Ano: ${this.ano}`);
+        alert(`Ligado: ${this.ligado ? 'Sim' : 'Não'}`);
+
+    }
+}
+
+// Adicionar Informação
+
+let novoCarro  = new  Carros ('Fiat' , 'Bravo' , 2023);
+
+// imprimir resultado
+
+novoCarro.ligar();
+novoCarro.imprimirInfo();
+
+// Imprimir Negação
+
+novoCarro.desligado();
+novoCarro.imprimirInfo();
+
+
+    </script>
+</body>
+</html>
